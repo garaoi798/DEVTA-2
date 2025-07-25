@@ -1,61 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Bagpack</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagpack</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar container">
-    <div class="nav-left">
-      <img src="images/navbar/logo.png" alt="logo" class="logo">
-    </div>
-    <div class="nav-right">
-      <a href="#" class="navbars active">Hero</a>
-      <a href="#" class="navbars">About</a>
-      <a href="#" class="navbars">Benifits</a>
-      <a href="#" class="navbars">Categories</a>
-      <a href="#" class="navbars">Testimonial</a>
-      <a href="#" class="navbars">Bundle</a>
-    </div>
-  </nav>
-  <!-- Hero -->
-  <section class="hero container">
-    <div class="hero-subcontainer">
-      <h1 class="hero-header">We <span class="hero-profile"><img src="images/hero/profile.png" alt="profile"></span>
-        produce high-quality bags for lifestyle
-      </h1>
-      <div class="cart-wrapper">
-        <a href="#" class="cart-cta">
-          <img src="images/hero/cloud.svg" id="cloud" alt="cloud">
-          <div class="cart-text">Add to Cart</div>
-          <div class="cart-right">
-            <div class="cart-text">$59.00</div>
-            <img src="images/hero/bag.png" alt="">
-          </div>
-        </a>
-        <div class="norton">
-          <img src="images/hero/norton.svg" class="norton">
-          <div class="norton-right">
-            <div class="norton-top">
-              <img src="images/hero/lock-icon.svg" class="lock-icon">
-              <p>Shop with confident</p>
-            </div>
-            <div class="norton-bottom">100% secured shopping with norton</div>
-          </div>
+    <nav class="navbar container">
+        <div class="nav-left">
+            <img src="images/navbar/backpack-logo.png" alt="" class="logo">
         </div>
-      </div>
-    </div>
-    <div class="hero-subcontainer">
-      <img src="images/hero/bag2.webp" alt="">
-    </div>
-    <div class="hero-subcontainer">
-      <img src="images/hero/yellow-water.svg" class="badge">
-      <img src="images/hero/yellow-water.svg" class="badge">
-      <img src="images/hero/yellow-water.svg" class="badge">
-      <img src="images/hero/yellow-water.svg" class="badge">
-    </div>
-  </section>
+        <div class="nav-right">
+            <a href="#" class="nav-links">Hero</a>
+            <a href="#" class="nav-links">About</a>
+            <a href="#" class="nav-links">Benifits</a>
+            <a href="#" class="nav-links">Categories</a>
+            <a href="#" class="nav-links">Testimonial</a>
+            <a href="#" class="nav-links">Bundle</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="herosection">
+            <div class="hero container">
+                <div class="herogrid">
+                    <div class="herogrid-left">
+                        <div class="div-block11">
+                            <div class="div-block2">
+                                <img src="images/hero/client.png" loading="lazy" style="opacity: 1;" alt="" class="image1">
+                                <img src="images/hero/image2.png" loading="lazy" alt="" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="image2">
+                            </div>
+                            <h1 class="header1">We <span class="clientimg">m</span>
+                            produce high- quality for lifestyle
+                            </h1>
+                            <img src="images/hero/arrow-right.png" loading="lazy"  style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"alt="" class="image4">
+                        </div>
+                        <div class="cart-wrapper">
+                            <a href="#" class="cart-cta">
+                                <img src="images/hero/cloud.svg" alt="" class="cloud">
+                                <div class="cart-text">Add to Cart</div>
+                                <div class="cart-right">
+                                    <div class="cart-text">$59.00</div>
+                                    <img src="images/hero/lock-in.svg" alt="" class="lock-icon">
+                                </div>
+                            </a>
+                            <div class="norton">
+                                <div class="norton-wrapper-logo"><img src="images/hero/norton.svg" loading="lazy" alt=""></div>
+                                <div class="norton-wrapper-right">
+                                    <div class="norton-top">
+                                        <img src="images/hero/lock-in.svg" alt="" class="lock-icon">
+                                        <div class="norton-headline">Shop with confidence</div>
+                                    </div>
+                                    <div class="norton-details">100% secured shopping with norton</div>
+                                </div>
+                            </div>
+                            <div class="div-block3">
+                                <div class="orange-box"></div>
+                                <img src="images/hero/yellow-woman.png" width="300px" loading="eager" alt="" class="image-woman">
+                                <div class="rating1wrap" style="opacity: 1;">
+                                    <img src="images/hero/rating-profile.png" alt="" class="rating-profile">
+                                    <img src="images/hero/rating-star.png" alt="" class="rating-star">
+                                    <img src="images/hero/rating-check.png" alt="" class="rating-check">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="herogrid-center">
+                        <div class="product-tab">
+                            <div class="tabs" role="tab-menus">
+                                <div class="tab _1 active w--current" onclick="showTab(0)"></div>
+                                <div class="tab _2" onclick="showTab(1)"></div>
+                                <div class="tab _3" onclick="showTab(2)"></div>
+                                <div class="tab _4" onclick="showTab(3)"></div>
+                            </div>
+                            <div class="content-wrapper">
+                                <div class="div-block4 tab-content active"> 
+                                    <img  sizes="(max-width: 479px) 82vw, (max-width: 991px) 336.46875px, (max-width: 1439px) 34vw, (max-width: 1919px) 336.46875px, 362.34375px"
+                                    src="images/hero/backpack.webp" loading="eager"  class="product-img" alt="">
+                                    <img src="images/hero/backpack-bottom.svg" class="image-4" alt="">
+                                </div>
+                                <div class="div-block4 tab-content">
+                                    <img sizes="(max-width: 479px) 82vw, (max-width: 991px) 336.46875px, (max-width: 1439px) 34vw, (max-width: 1919px) 336.46875px, 362.34375px"
+                                    src="images/hero/bag-green.png" loading="eager" class="product-img" alt="">
+                                    <img src="images/hero/backpack-bottom.svg" class="image-4" alt="">
+                                </div>
+                                <div class="div-block4 tab-content">
+                                    <img sizes="(max-width: 479px) 82vw, (max-width: 991px) 336.46875px, (max-width: 1439px) 34vw, (max-width: 1919px) 336.46875px, 362.34375px"
+                                    src="images/hero/bag-red.png" loading="eager" class="product-img" alt="">
+                                    <img src="images/hero/backpack-bottom.svg" class="image-4" alt="">
+                                </div> 
+                                <div class="div-block4 tab-content">
+                                    <img sizes="(max-width: 479px) 82vw, (max-width: 991px) 336.46875px, (max-width: 1439px) 34vw, (max-width: 1919px) 336.46875px, 362.34375px"
+                                    src="images/hero/bag-yellow.png" loading="eager" class="product-img" alt="">
+                                    <img src="images/hero/backpack-bottom.svg" class="image-4" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="herogrid-right">
+                        <img src="images/hero/badge.svg" loading="lazy" alt="" class="badge">
+                        <img src="images/hero/badge.svg" loading="lazy" alt="" class="badge">
+                        <img src="images/hero/badge.svg" loading="lazy" alt="" class="badge">
+                        <img src="images/hero/badge.svg" loading="lazy" alt="" class="badge">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="partner-logos">
+            <div class="container">
+                <div class="logo-header">Trusted By</div>
+                <div class="logos">
+                    <img src="images/logos/addidas.svg" alt="" class="brand-logo">
+                    <img src="images/logos/coverse.svg" alt="" class="brand-logo">
+                    <img src="images/logos/puma.svg" alt="" class="brand-logo">
+                    <img src="images/logos/addidas.svg" alt="" class="brand-logo">
+                    <img src="images/logos/coverse.svg" alt="" class="brand-logo">
+                    <img src="images/logos/puma.svg" alt="" class="brand-logo">
+                </div>
+            </div>
+        </div>
+        <section class="bag-feature">
+            <div class="container">
+                <div class="bag-feature-header">
+                    <div class="subheading-wrap">
+                        <h1 class="heading3">Add in comfort binds them</h1>
+                        <img src="images/bag-feature/heart.png" alt="Heart icon" class="heart-img">
+                    </div>
+
+                    <div class="heading-wrapper center">
+                        <h2 class="heading2">One bag to fit them all</h2>
+                        <div class="bg-frame">
+                        <img src="images/bag-feature/heading-bg.png" class="image5" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-body">
+                    <div class="bag-feature-container _1">
+                        <img src="images/bag-feature/left-top.svg" width="83" alt="" class="left-top">
+                        <img src="images/bag-feature/right-top.svg" width="73" alt="" class="right-top">
+                        <div class="bag-feature-image-wrapper">
+                            <div class="bag-feature-image-bg _1">
+                                <img src="images/hero/bag-green.png" loading="lazy" width="173" alt="" class="image7 small">
+                                <img src="images/hero/bag-green.png"  loading="lazy" width="259" alt="" class="image7">
+                                <div class="floating-review blue">
+                                    <img src="images/bag-feature/stars.svg" loading="lazy" alt="" class="image8">
+                                    <div class="review-text">My 3 y/o loves it carrying daily to the school!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bag-feature-details-wrapper">
+                            <div class="bag-feature-details-heading">
+                                <h2 class="bag-feature-heading">Amazing pal for  <br> the little ones</h2>
+                                <img src="images/bag-feature/brow-white.svg" alt="" class="image9">
+                            </div>
+                            <div class="collection-link-wrapper">
+                                <a href="#" class="collection-link">View Child Collection</a>
+                                <img src="images/bag-feature/arrow right.svg" alt="" class="right-arrow">
+                            </div>
+                            <div class="bag-feature-block-wrapper _1">
+                                <div class="bag-feature-block-grid">
+                                    <div class="bag-feature-block left">
+                                        <div class="feature-icon-wrapper">
+                                            <img src="images/bag-feature/icon1.svg" alt="" class="icon1">
+                                        </div>
+                                        <div class="feature-details-wrapper">
+                                            <div class="feature-detail-heading">Stationary Pockets</div>
+                                            <p class="feature-detail-para">
+                                                Lorem Ipsum dolor sit <br> amet, consectetur
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bag-feature-block">
+                                        <div class="feature-icon-wrapper">
+                                            <img src="images/bag-feature/icon2.svg" alt="" class="icon1">
+                                        </div>
+                                        <div class="feature-details-wrapper">
+                                            <div class="feature-detail-heading">Stationary Pockets</div>
+                                            <p class="feature-detail-para">
+                                                Lorem Ipsum dolor sit <br> amet, consectetur
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bag-feature-container _2">
+                        <div class="bag-feature-details-wrapper _2">
+                            <div class="bag-feature-details-heading">
+                                <h2 class="bag-feature-heading">Perfect for your  <br> lappy</h2>
+                                <img src="images/bag-feature/brow-white.svg" alt="" class="image9">
+                            </div>
+                            <div class="collection-link-wrapper">
+                                <a href="#" class="collection-link">View Laptop Collection</a>
+                                <img src="images/bag-feature/arrow right.svg" alt="" class="right-arrow">
+                            </div>
+                            <div class="bag-feature-block-wrapper _2">
+                                <div class="bag-feature-block-grid">
+                                    <div class="bag-feature-block left">
+                                        <div class="feature-icon-wrapper">
+                                            <img src="images/bag-feature/icon3.svg" alt="" class="icon1">
+                                        </div>
+                                        <div class="feature-details-wrapper">
+                                            <div class="feature-detail-heading">Laptop Customize</div>
+                                            <p class="feature-detail-para">
+                                                Lorem Ipsum dolor sit <br> amet, consectetur
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bag-feature-block">
+                                        <div class="feature-icon-wrapper">
+                                            <img src="images/bag-feature/icon4.svg" alt="" class="icon1">
+                                        </div>
+                                        <div class="feature-details-wrapper">
+                                            <div class="feature-detail-heading">Accessories Space</div>
+                                            <p class="feature-detail-para">
+                                                Lorem Ipsum dolor sit <br> amet, consectetur
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bag-feature-image-wrapper">
+                            <div class="bag-feature-image-bg _2">
+                                <img src="images/bag-feature/grey-bag.png" loading="lazy" width="173" alt="" class="image7 small _2">
+                                <img src="images/bag-feature/grey-bag.png"  loading="lazy" width="291" alt="" class="image7 _2">
+                                <div class="floating-review _2">
+                                    <img src="images/bag-feature/stars.svg" loading="lazy" alt="" class="image8">
+                                    <div class="review-text">My 3 y/o loves it carrying daily to the school!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bag-feature-container _3">
+                        <img src="images/bag-feature/bottom-left.svg"  alt="" class="bottom-left">
+                        <img src="images/bag-feature/bottom-right.svg" width="97" alt="" class="bottom-right">
+                        <div class="bag-feature-image-wrapper">
+                            <div class="bag-feature-image-bg">
+                                <img src="images/bag-feature/green2-bag.png" loading="lazy" width="173" alt="" class="image7 small _3">
+                                <img src="images/bag-feature/green2-bag.png"  loading="lazy" width="197" alt="" class="image7 _3">
+                                <div class="floating-review _3">
+                                    <img src="images/bag-feature/stars.svg" loading="lazy" alt="" class="image8">
+                                    <div class="review-text">My 3 y/o loves it carrying daily to the school!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bag-feature-details-wrapper">
+                            <div class="bag-feature-details-heading">
+                                <h2 class="bag-feature-heading">Travel Companion</h2>
+                                <img src="images/bag-feature/brow-white.svg" alt="" class="image9">
+                            </div>
+                            <div class="collection-link-wrapper">
+                                <a href="#" class="collection-link">View Travel Collection</a>
+                                <img src="images/bag-feature/arrow right.svg" alt="" class="right-arrow">
+                            </div>
+                            <div class="bag-feature-block-wrapper _1">
+                                <div class="bag-feature-block-grid">
+                                    <div class="bag-feature-block left">
+                                        <div class="feature-icon-wrapper">
+                                            <img src="images/bag-feature/icon5.svg" alt="" class="icon1">
+                                        </div>
+                                        <div class="feature-details-wrapper">
+                                            <div class="feature-detail-heading">No shoulder ache</div>
+                                            <p class="feature-detail-para">
+                                                Lorem Ipsum dolor sit <br> amet, consectetur
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bag-feature-block">
+                                        <div class="feature-icon-wrapper">
+                                            <img src="images/bag-feature/icon6.svg" alt="" class="icon1">
+                                        </div>
+                                        <div class="feature-details-wrapper">
+                                            <div class="feature-detail-heading">Stationary Pockets</div>
+                                            <p class="feature-detail-para">
+                                                Lorem Ipsum dolor sit <br> amet, consectetur
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.tab-content');
+
+        function showTab(index) {
+        tabs.forEach((tab, i) => {
+            if (i === index) {
+                tab.classList.add('active');
+                tab.classList.add('w--current');
+                contents[i].classList.add('active');
+            } else {
+                tab.classList.remove('active');
+                tab.classList.remove('w--current');
+                contents[i].classList.remove('active');
+            }
+        });
+        }
+    </script>
+
 </body>
 </html>
